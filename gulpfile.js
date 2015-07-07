@@ -6,7 +6,9 @@ gulp.task('serve', function() {
     .pipe(server({
       livereload: true,
       defaultFile: 'index.html',
-      open: true
+      open:{
+      	browser: 'google-chrome'
+      }
     }));
 });
 
