@@ -4,7 +4,9 @@ function todoComponent(){
 	this.addTodo = function(todoname) {
 		if(todoname.value){
 			this.todos.push(todoname.value);
-	    	todoname.value = '';	
+	    	todoname.value = '';
+	    	Materialize.showStaggeredList('#staggered-test')
+	    	Materialize.toast('todo added !', 4000)
 		}
 	};
 
@@ -17,6 +19,8 @@ function todoComponent(){
 
   	this.delete = function(i){
   		this.todos.splice(i,1);
+  		Materialize.showStaggeredList('#staggered-test')
+	    Materialize.toast('todo deleted !', 4000)
   	}
 
 
@@ -46,6 +50,7 @@ todoComponent.annotations	=	[
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
+		$('.tooltipped').tooltip({delay: 50});
 	angular.bootstrap(todoComponent);
 	angular.bootstrap(navComponent);
 });
