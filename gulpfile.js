@@ -7,7 +7,7 @@ gulp.task('serve', function() {
       livereload: true,
       defaultFile: 'index.html',
       open:{
-      	browser: 'google-chrome'
+      	browser: 'chrome'
       }
     }));
 });
