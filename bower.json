@@ -1,0 +1,20 @@
+{
+  "name": "angular2-todo",
+  "version": "0.0.0",
+  "authors": [
+    "sajin <sajinrules@gmail.com>"
+  ],
+  "description": "A test todo application using angular 2.0",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.97.0"
+  }
+}
